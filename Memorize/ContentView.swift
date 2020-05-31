@@ -10,9 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        return Text("Hello, World!") // return can be omitted if the return is one thing
-        // Swift likes to ommit return for clean code
-    }
+            ZStack(content: {
+                RoundedRectangle(cornerRadius: 10.0)
+                Text("👻")
+            }
+        )}
 }
 
 struct ContentView_Previews: PreviewProvider {
