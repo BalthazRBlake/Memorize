@@ -10,11 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            ZStack(content: {
+        ZStack(alignment: Alignment.top) { //ZStack(alignment: Alignment.top, content: {
                 RoundedRectangle(cornerRadius: 10.0)
                 Text("👻")
             }
-        )}
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
