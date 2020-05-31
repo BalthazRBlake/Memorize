@@ -11,9 +11,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-                RoundedRectangle(cornerRadius: 10.0)
-                Text("👻")
-            }
+            RoundedRectangle(cornerRadius: 10.0).fill(Color.gray) // inner style for particular view
+            RoundedRectangle(cornerRadius: 10.0).stroke() // inner style for particular view
+            Text("👻").font(Font.largeTitle) // inner style for particular view
+        }
+            .foregroundColor(Color.orange) // style for the whole Stack
         }
 }
 
