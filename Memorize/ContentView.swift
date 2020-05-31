@@ -14,12 +14,13 @@ struct ContentView: View {
             ForEach(0..<4) { index in
                 ZStack {
                     RoundedRectangle(cornerRadius: 10.0).fill(Color.gray)
-                    RoundedRectangle(cornerRadius: 10.0).stroke()
+                    RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3)
                     Text("👻").font(Font.largeTitle)
                 }
-                    .foregroundColor(Color.orange)
             }
         }
+        .padding()
+        .foregroundColor(Color.orange)
     }
 }
 
