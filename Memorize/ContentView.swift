@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        return Text("Hello, World!") // return can be omitted if the return is one thing
+        // Swift likes to ommit return for clean code
     }
 }
 
