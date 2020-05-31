@@ -10,13 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10.0).fill(Color.gray) // inner style for particular view
-            RoundedRectangle(cornerRadius: 10.0).stroke() // inner style for particular view
-            Text("👻").font(Font.largeTitle) // inner style for particular view
+        ForEach(0..<4) { index in
+            ZStack {
+                RoundedRectangle(cornerRadius: 10.0).fill(Color.gray)
+                RoundedRectangle(cornerRadius: 10.0).stroke()
+                Text("👻").font(Font.largeTitle)
+            }
+                .foregroundColor(Color.orange)
         }
-            .foregroundColor(Color.orange) // style for the whole Stack
-        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
