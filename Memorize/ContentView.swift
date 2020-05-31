@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack(alignment: Alignment.top) { //ZStack(alignment: Alignment.top, content: {
+        ZStack {
                 RoundedRectangle(cornerRadius: 10.0)
                 Text("👻")
             }
